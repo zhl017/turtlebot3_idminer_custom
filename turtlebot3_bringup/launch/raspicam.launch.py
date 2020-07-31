@@ -40,8 +40,8 @@ def generate_launch_description():
             description='Full path to camera parameter file to load'),
 
         Node(
-            package='raspicam_node',
-            node_executable='raspicam_node',
+            package='raspicam2',
+            node_executable='raspicam2_node',
             parameters=[camera_param_dir],
             output='screen'),
     ])
