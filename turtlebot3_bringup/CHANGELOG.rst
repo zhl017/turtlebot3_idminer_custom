@@ -2,6 +2,11 @@
 Changelog for package turtlebot3_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.2.6 (2022-02-24)
+------------------
+* add LDS-02 support
+* Contributors: Will Son
+
 1.2.5 (2020-12-30)
 ------------------
 * No Changes

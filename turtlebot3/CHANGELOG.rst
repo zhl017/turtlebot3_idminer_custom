@@ -2,6 +2,12 @@
 Changelog for package turtlebot3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.2.6 (2022-02-24)
+------------------
+* add LDS-02 support
+* Fix teleop_key on Windows 10
+* Contributors: Rushikesh Kamalapurkar, Will Son
+
 1.2.5 (2020-12-30)
 ------------------
 * Python 2/3 compatibility fix
