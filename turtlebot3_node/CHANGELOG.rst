@@ -2,6 +2,10 @@
 Changelog for package turtlebot3_node
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.1.5 (2202-05-26)
+------------------
+* ROS2 Humble Hawksbill supported
+
 2.1.4 (2022-02-08)
 ------------------
 * none
@@ -17,7 +21,8 @@ Changelog for package turtlebot3_node
 ------------------
 * use static param types for Galactic
 * fix SensorState msg
-* Contributors: jhbirdchoi, Will Son
+* fix odometry bug
+* Contributors: jhbirdchoi, Ashe Kim, Will Son
 
 2.1.1 (2021-01-06)
 ------------------

@@ -2,6 +2,11 @@
 Changelog for package turtlebot3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.1.5 (2202-05-26)
+------------------
+* ROS2 Humble Hawksbill supported
+* revise ROS2 Cartographer excutable & name
+
 2.1.4 (2022-02-08)
 ------------------
 * add LDS-02 support
@@ -17,9 +22,10 @@ Changelog for package turtlebot3
 ------------------
 * use static param types for Galactic
 * fix SensorState msg
-* rename nav2 params
+* rename and update nav2 params
 * modify robot_state_publisher
-* Contributors: jhbirdchoi, David Park, Will Son
+* fix odometry bug
+* Contributors: jhbirdchoi, David Park, Ashe Kim, Will Son
 
 2.1.1 (2021-01-06)
 ------------------
