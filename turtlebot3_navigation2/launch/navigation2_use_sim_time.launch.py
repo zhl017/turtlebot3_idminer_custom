@@ -57,7 +57,7 @@ def generate_launch_description():
             [
                 FindPackageShare('turtlebot3_navigation2'),
                 'param',
-                os.environ['TURTLEBOT3_MODEL'] + '.yaml'
+                os.environ['TURTLEBOT3_MODEL'] + '_use_sim_time.yaml'
             ]
         )
     )
@@ -93,7 +93,7 @@ def generate_launch_description():
 
         DeclareLaunchArgument(
             'use_sim',
-            default_value='false',
+            default_value='true',
             description='Start robot in Gazebo simulation'),
 
         DeclareLaunchArgument(
