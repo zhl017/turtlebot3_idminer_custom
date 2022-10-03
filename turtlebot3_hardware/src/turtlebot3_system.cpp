@@ -135,6 +135,10 @@ hardware_interface::CallbackReturn TurtleBot3SystemHardware::on_activate(
   opencr_->imu_recalibration();
   rclcpp::sleep_for(std::chrono::seconds(3));
 
+  opencr_->send_heartbeat(heartbeat_++);
+  RCLCPP_INFO(logger, "Wheels torque ON");
+  opencr_->wheels_torque(opencr::ON);
+
   RCLCPP_INFO(logger, "System starting");
   opencr_->play_sound(opencr::SOUND::ASCENDING);
 
@@ -155,7 +159,7 @@ hardware_interface::CallbackReturn TurtleBot3SystemHardware::on_deactivate(
 hardware_interface::return_type TurtleBot3SystemHardware::read(
   const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
-  RCLCPP_INFO_ONCE(logger, "Start to read wheels and manipulator states");
+  RCLCPP_INFO_ONCE(logger, "Start to read wheels states");
 
   if (opencr_->read_all() == false) {
     RCLCPP_WARN(logger, "Failed to read all control table");
@@ -191,7 +195,7 @@ hardware_interface::return_type TurtleBot3SystemHardware::read(
 hardware_interface::return_type TurtleBot3SystemHardware::write(
   const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
-  RCLCPP_INFO_ONCE(logger, "Start to write wheels and manipulator commands");
+  RCLCPP_INFO_ONCE(logger, "Start to write wheels commands");
   opencr_->send_heartbeat(heartbeat_++);
 
   if (opencr_->set_wheel_velocities(dxl_wheel_commands_) == false) {
