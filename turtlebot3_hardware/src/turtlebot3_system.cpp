@@ -29,7 +29,7 @@ namespace robotis
 {
 namespace turtlebot3_hardware
 {
-auto logger = rclcpp::get_logger("turtlebot3_manipulation");
+auto logger = rclcpp::get_logger("turtlebot3");
 hardware_interface::CallbackReturn TurtleBot3SystemHardware::on_init(
   const hardware_interface::HardwareInfo & info)
 {

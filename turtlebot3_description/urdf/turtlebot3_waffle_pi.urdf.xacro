@@ -16,7 +16,7 @@
   <!-- Include TurtleBot3 Waffle Pi gazebo macro -->
   <xacro:include filename="$(find turtlebot3_description)/gazebo/waffle_pi.gazebo.xacro" />
 
-  <!-- Include TurtleBot3 Manipulation ros2 control macro -->
+  <!-- Include TurtleBot3  ros2 control macro -->
   <xacro:include filename="$(find turtlebot3_description)/ros2_control/turtlebot3_system.ros2_control.xacro" />
 
   <xacro:waffle_pi prefix="$(arg prefix)" />
