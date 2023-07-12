@@ -1,5 +1,5 @@
 # TurtleBot3 Friends : Mecanum  
-model name according to XM430's model.
+model name according to XM430's type.
 
 - **Mecanum W210**
   
@@ -33,11 +33,13 @@ Set the default TURTLEBOT3_MODEL name to your model. Enter the below command to 
 - In case of `mecanum w210`
 ```code
 $ echo "export TURTLEBOT3_MODEL=mecanum w210" >> ~/.bashrc
+$ echo "export MECANUM_TYPE=w210 >> ~/.bashrc
 $ source ~/.bashrc
 ```
 - In case of `mecanum w350`
 ```code
 $ echo "export TURTLEBOT3_MODEL=mecanum w350" >> ~/.bashrc
+$ echo "export MECANUM_TYPE=w350 >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
