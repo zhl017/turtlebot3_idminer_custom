@@ -39,7 +39,7 @@ MECANUM_W210_MAX_LIN_VEL = 0.40
 MECANUM_W210_MAX_ANG_VEL = 2.00
 
 MECANUM_W350_MAX_LIN_VEL = 0.24
-MECANUM_W350_MAX_ANG_VEL = 0.12
+MECANUM_W350_MAX_ANG_VEL = 1.20
 
 LIN_VEL_STEP_SIZE = 0.01
 ANG_VEL_STEP_SIZE = 0.1
@@ -47,7 +47,7 @@ ANG_VEL_STEP_SIZE = 0.1
 msg = """
 Control Your TurtleBot3 Mecanum!
 (Mecanum W210 Linear : ~ 0.40, Angular : ~ 2.00)
-(Mecanum W350 Linear : ~ 0.24, Angular : ~ 0.12)
+(Mecanum W350 Linear : ~ 0.24, Angular : ~ 1.20)
 ---------------------------
 Moving around:
    q    w    e
