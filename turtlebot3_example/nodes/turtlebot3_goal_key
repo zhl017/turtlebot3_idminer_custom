@@ -22,7 +22,7 @@ s : close
 
 class Process():
     def __init__(self):
-        rospy.init_node('moving')
+        rospy.init_node('turtlebot3_goal_key')
         rospy.on_shutdown(self.shutdown)
 
         self.cmd_vel = rospy.Publisher('/cmd_vel', Twist, queue_size=5)
@@ -50,9 +50,9 @@ class Process():
                 moving = True
             while abs(saved_tick.position[0] - self.current_tick.position[0]) * RAD2TICK <= diff_encoder:
                 if goal_x > 0:
-                    move_cmd.linear.x = 0.03
+                    move_cmd.linear.x = 0.2
                 else:
-                    move_cmd.linear.x = -0.03
+                    move_cmd.linear.x = -0.2
                 self.cmd_vel.publish(move_cmd)
                 r.sleep()
 
@@ -63,9 +63,9 @@ class Process():
                 moving = True
             while abs(saved_tick.position[0] - self.current_tick.position[0]) * RAD2TICK <= diff_encoder:
                 if goal_y > 0:
-                    move_cmd.linear.y = 0.03
+                    move_cmd.linear.y = 0.2
                 else:
-                    move_cmd.linear.y = -0.03
+                    move_cmd.linear.y = -0.2
                 self.cmd_vel.publish(move_cmd)
                 r.sleep()
 
